@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Club d'Astronomie</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🌌 Club d'Astronomie
+    </div>
+
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <a href="index.html">🏠 Accueil</a>
+        <a href="compte.html">👤 Compte</a>
+        <a href="discussion.html">💬 Discussion</a>
+        <a href="photos.html">📸 Photos</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <h1>Bienvenue sur le club d'astronomie 🌌</h1>
+
+        <p>
+            Retrouvez les actualités, les photos et les discussions
+            du club.
+        </p>
+
+    </section>
+
+
+    <!-- MÉTÉO -->
+
+    <section>
+
+        <h2>🌤️ Météo</h2>
+
+        <div class="weather-container">
+
+            <div class="weather-card">
+                <h3>📍 Orléans</h3>
+                <div id="weather1">
+                    Chargement...
+                </div>
+            </div>
+
+            <div class="weather-card">
+                <h3>📍 Lieu 2</h3>
+                <div id="weather2">
+                    Chargement...
+                </div>
+            </div>
+
+            <div class="weather-card">
+                <h3>📍 Lieu 3</h3>
+                <div id="weather3">
+                    Chargement...
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ANNONCES -->
+
+    <section>
+
+        <h2>📢 Annonces du club</h2>
+
+        <div id="annonces">
+
+            <article class="announcement">
+
+                <h3>🔭 Prochaine observation</h3>
+
+                <p>
+                    Une nouvelle soirée d'observation sera bientôt organisée.
+                </p>
+
+                <small>
+                    Publié par le club
+                </small>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTOS -->
+
+    <section>
+
+        <h2>❤️ Photos les plus likées</h2>
+
+        <div id="topPhotos" class="photos-grid">
+
+            <div class="photo-card">
+
+                <img
+                    src="images/photo-exemple.jpg"
+                    alt="Photo astronomique"
+                >
+
+                <div class="photo-info">
+
+                    <span>
+                        🌌 Nébuleuse
+                    </span>
+
+                    <span>
+                        ❤️ 0
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/accueil.js"></script>
+
+<script>
+
+function toggleMenu() {
+
+    const menu = document.getElementById("menu");
+
+    menu.classList.toggle("open");
+
+}
+
+</script>
+
+</body>
+</html>
